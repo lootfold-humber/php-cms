@@ -65,6 +65,9 @@ include( 'admin/includes/functions.php' );
     <hr>
 
   <?php endwhile; ?>
-
+  <?php
+  include('./contact.php');
+  ?>
 </body>
+
 </html>

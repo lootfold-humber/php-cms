@@ -22,6 +22,11 @@ include( 'includes/header.php' );
     </a>
   </li>
   <li>
+    <a href="contact_requests.php">
+      Contact Requests
+    </a>
+  </li>
+  <li>
     <a href="logout.php">
       Logout
     </a>
