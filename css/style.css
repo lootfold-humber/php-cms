@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Roboto&display=swap");
+
+h1 {
+  font-family: "Major Mono Display", monospace;
+}
+
+.heading {
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-decoration-color: gold;
+  font-weight: 500;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.intro {
+  padding-top: 6em;
+  padding-left: 5em;
+}
+
+#intro {
+  font-size: xxx-large;
+}
+
+#intro-text {
+  font-size: large;
+}
+
+.profile-img {
+  max-width: 300px;
+}
+
+.project-img {
+  max-height: 400px;
+  border: 5px solid black;
+  border-radius: 10px;
+}
+
+form {
+  max-width: 400px;
+  margin: auto;
+}
+
+form > label {
+  text-align: left;
+}
+
+@media screen and (max-width: 800px) {
+  .intro {
+    padding: 0;
+  }
+}

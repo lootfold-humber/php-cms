@@ -17,19 +17,13 @@ if (isset($_POST['submit'])) {
 }
 ?>
 
-<form method="POST">
-    <div>
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" placeholder="Name" min=3 required>
-    </div>
-    <div>
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" placeholder="Email" required>
-    </div>
-    <div>
-        <label for="email">Message</label>
-        <textarea name="message" id="" cols="30" rows="10" placeholder="Type your message..." required>
-        </textarea>
-    </div>
-    <input type="submit" name="submit" value="Submit">
-</form>
+<section class="w3-center w3-padding">
+    <h2 class="heading">Contact Me</h2>
+    <form method="POST">
+        <input class="w3-input" type="text" id="name" name="name" placeholder="Name" min=3 required>
+        <input class="w3-input" type="email" id="email" name="email" placeholder="Email" required>
+        <textarea class="w3-input" name="message" id="" cols="30" rows="10" placeholder="Type your message..." required>
+            </textarea>
+        <input class="w3-margin-top w3-btn w3-black" type="submit" name="submit" value="Submit">
+    </form>
+</section>
