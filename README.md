@@ -1,3 +1,11 @@
+# Features added as part of Group Project
+
+- CRUD operation for skills
+- CRD operations for contact requests
+- link projetcs, skills and contact requests to user by FK in DB
+- use query param in personal portfolio to get user specific data
+- use icons on admin dashboard
+
 # php-cms
 
 This repository is a simple PHP CMS meant to be used as a starting point. The code consists of a simple login process, a dashboard, a place to view/add/edit/delete users, and a place to view/add/edit/delete projects. In an effort to keep the PHP code focused and basic, only the absolute basics have been included. The whole CMS only consists of HTML, PHP, and SQL.
