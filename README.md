@@ -2,6 +2,7 @@
 
 - CRUD operation for skills
 - CRD operations for contact requests
+- add about and photo for users
 - link projetcs, skills and contact requests to user by FK in DB
 - use query param in personal portfolio to get user specific data
 - use icons on admin dashboard

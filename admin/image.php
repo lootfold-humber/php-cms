@@ -40,7 +40,19 @@ switch( $_GET['type'] )
       if( !$record['logo'] ) $record['logo'] = $camera;
       $record['photo'] = $record['logo'];
       break;
-      
+    
+    case 'user':
+    
+      $query = 'SELECT photo 
+        FROM users
+        WHERE id = '.$_GET['id'].'
+        LIMIT 1';
+      $result = mysqli_query( $connect, $query );
+      $record = mysqli_fetch_assoc( $result );
+  
+      if( !$record['photo'] ) $record['photo'] = $camera;
+      $record['photo'] = $record['photo'];
+      break;
 }
 
 include 'includes/wideimage/WideImage.php';
