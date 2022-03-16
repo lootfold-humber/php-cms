@@ -19,13 +19,15 @@ if( isset( $_POST['title'] ) )
         content,
         date,
         type,
-        url
+        url,
+        user_id
       ) VALUES (
          "'.mysqli_real_escape_string( $connect, $_POST['title'] ).'",
          "'.mysqli_real_escape_string( $connect, $_POST['content'] ).'",
          "'.mysqli_real_escape_string( $connect, $_POST['date'] ).'",
          "'.mysqli_real_escape_string( $connect, $_POST['type'] ).'",
-         "'.mysqli_real_escape_string( $connect, $_POST['url'] ).'"
+         "'.mysqli_real_escape_string( $connect, $_POST['url'] ).'",
+         "'.mysqli_real_escape_string( $connect, $_SESSION['id'] ).'"
       )';
     mysqli_query( $connect, $query );
     
@@ -80,7 +82,7 @@ if( isset( $_POST['title'] ) )
   <label for="type">Type:</label>
   <?php
   
-  $values = array( 'Website', 'Graphic Design' );
+  $values = array( 'Website', 'Graphic Design', 'App' );
   
   echo '<select name="type" id="type">';
   foreach( $values as $key => $value )

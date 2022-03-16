@@ -1,11 +1,3 @@
-<!-- CREATE TABLE contact_requests
-(
-	id INT PRIMARY KEY AUTO_INCREMENT,
-	name VARCHAR(100),
-	email VARCHAR(100),
-	message VARCHAR(255)
-) -->
-
 <?php
 include('includes/database.php');
 include('includes/config.php');

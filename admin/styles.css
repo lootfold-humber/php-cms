@@ -105,3 +105,18 @@ input[type=submit] {
 #dashboard i {
   margin-bottom: 5px;
 }
+
+.dashboard-link {
+  display: flex;
+  justify-content: center;
+}
+
+.dashboard-link span,
+.dashboard-link img {
+  align-self: center;
+}
+
+.dashboard-link img {
+  margin-left: 10px;
+}
+

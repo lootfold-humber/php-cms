@@ -25,6 +25,7 @@ if( isset( $_GET['delete'] ) )
 
 $query = 'SELECT *
   FROM projects
+  WHERE user_id='. mysqli_real_escape_string($connect, $_SESSION['id']).'
   ORDER BY date DESC';
 $result = mysqli_query( $connect, $query );
 
@@ -32,11 +33,14 @@ $result = mysqli_query( $connect, $query );
 
 <h2>Manage Projects</h2>
 
+<p><a href="projects_add.php"><i class="fas fa-plus-square"></i> Add Project</a></p>
+
 <table>
   <tr>
     <th></th>
     <th align="center">ID</th>
-    <th align="left">Title</th>
+    <th align="center">Title</th>
+    <th align="center">Url </th>
     <th align="center">Type</th>
     <th align="center">Date</th>
     <th></th>
@@ -53,6 +57,7 @@ $result = mysqli_query( $connect, $query );
         <?php echo htmlentities( $record['title'] ); ?>
         <small><?php echo $record['content']; ?></small>
       </td>
+      <td align="center"> <?php echo $record['url']; ?></td>
       <td align="center"><?php echo $record['type']; ?></td>
       <td align="center" style="white-space: nowrap;"><?php echo htmlentities( $record['date'] ); ?></td>
       <td align="center"><a href="projects_photo.php?id=<?php echo $record['id']; ?>">Photo</i></a></td>
@@ -63,9 +68,6 @@ $result = mysqli_query( $connect, $query );
     </tr>
   <?php endwhile; ?>
 </table>
-
-<p><a href="projects_add.php"><i class="fas fa-plus-square"></i> Add Project</a></p>
-
 
 <?php
 

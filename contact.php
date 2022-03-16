@@ -4,12 +4,15 @@ if (isset($_POST['submit'])) {
     $query = 'INSERT INTO contact_requests (
                 name,
                 email,
-                message
+                message,
+                user_id
                 ) VALUES (
                     "' . mysqli_real_escape_string($connect, $_POST['name']) . '",
                     "' . mysqli_real_escape_string($connect, $_POST['email']) . '",
-                    "' . mysqli_real_escape_string($connect, $_POST['message']) . '"
+                    "' . mysqli_real_escape_string($connect, $_POST['message']) . '",
+                    '.$user_id.'
                 )';
+    echo $query;
     $result = mysqli_query($connect, $query);
 }
 ?>
