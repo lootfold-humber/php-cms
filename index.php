@@ -24,7 +24,7 @@ $user = mysqli_fetch_assoc($result)
   <title><?php echo $user['first'] . ' ' . $user['last'] ?></title>
 
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-  <link rel="stylesheet" href="css/style.css" />
+  <link href="/css/style.css" type="text/css" rel="stylesheet">
 </head>
 
 <body>
