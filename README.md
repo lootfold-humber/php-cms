@@ -1,11 +1,12 @@
 # Features added as part of Group Project
 
-- CRUD operation for skills
+- CRUD operations for skills
 - CRD operations for contact requests
 - add about and photo for users
 - link projetcs, skills and contact requests to user by FK in DB
-- use query param in personal portfolio to get user specific data
-- use icons on admin dashboard
+- users would be able to read, edit or delete data linked to their profile
+- query param in personal portfolio to get user specific data
+- icons on admin dashboard
 
 # php-cms
 

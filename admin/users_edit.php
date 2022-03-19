@@ -69,17 +69,17 @@ if (isset($_GET['id'])) {
 <form method="post">
 
   <label for="first">First:</label>
-  <input type="text" name="first" id="first" value="<?php echo htmlentities($record['first']); ?>">
+  <input type="text" name="first" id="first" value="<?php echo htmlentities($record['first']); ?>" required>
 
   <br>
 
   <label for="last">Last:</label>
-  <input type="text" name="last" id="last" value="<?php echo htmlentities($record['last']); ?>">
+  <input type="text" name="last" id="last" value="<?php echo htmlentities($record['last']); ?>" required>
 
   <br>
 
   <label for="email">Email:</label>
-  <input type="email" name="email" id="email" value="<?php echo htmlentities($record['email']); ?>">
+  <input type="email" name="email" id="email" value="<?php echo htmlentities($record['email']); ?>" required>
 
   <br>
 
@@ -89,7 +89,7 @@ if (isset($_GET['id'])) {
   <br>
 
   <label for="password">Password:</label>
-  <input type="password" name="password" id="password">
+  <input type="password" name="password" id="password" required>
 
   <br>
 

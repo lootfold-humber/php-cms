@@ -47,12 +47,12 @@ if( isset( $_POST['title'] ) )
 <form method="post">
   
   <label for="title">Title:</label>
-  <input type="text" name="title" id="title">
+  <input type="text" name="title" id="title" required>
     
   <br>
   
   <label for="content">Content:</label>
-  <textarea type="text" name="content" id="content" rows="10"></textarea>
+  <textarea type="text" name="content" id="content" rows="10" required></textarea>
       
   <script>
 
@@ -70,7 +70,7 @@ if( isset( $_POST['title'] ) )
   <br>
   
   <label for="url">URL:</label>
-  <input type="text" name="url" id="url">
+  <input type="text" name="url" id="url" required>
   
   <br>
   

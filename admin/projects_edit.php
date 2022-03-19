@@ -70,12 +70,12 @@ if( isset( $_GET['id'] ) )
 <form method="post">
   
   <label for="title">Title:</label>
-  <input type="text" name="title" id="title" value="<?php echo htmlentities( $record['title'] ); ?>">
+  <input type="text" name="title" id="title" value="<?php echo htmlentities( $record['title'] ); ?>" required>
     
   <br>
   
   <label for="content">Content:</label>
-  <textarea type="text" name="content" id="content" rows="5"><?php echo htmlentities( $record['content'] ); ?></textarea>
+  <textarea type="text" name="content" id="content" rows="5" required><?php echo htmlentities( $record['content'] ); ?></textarea>
   
   <script>
 
@@ -93,7 +93,7 @@ if( isset( $_GET['id'] ) )
   <br>
   
   <label for="url">URL:</label>
-  <input type="text" name="url" id="url" value="<?php echo htmlentities( $record['url'] ); ?>">
+  <input type="text" name="url" id="url" value="<?php echo htmlentities( $record['url'] ); ?>" required>
     
   <br>
   

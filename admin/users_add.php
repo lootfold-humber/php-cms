@@ -44,17 +44,17 @@ if (isset($_POST['first'])) {
 <form method="post">
 
   <label for="first">First Name:</label>
-  <input type="text" name="first" id="first">
+  <input type="text" name="first" id="first" required>
 
   <br>
 
   <label for="last">Last Name:</label>
-  <input type="text" name="last" id="last">
+  <input type="text" name="last" id="last" required>
 
   <br>
 
   <label for="email">Email:</label>
-  <input type="email" name="email" id="email">
+  <input type="email" name="email" id="email" required>
 
   <br>
 
@@ -64,7 +64,7 @@ if (isset($_POST['first'])) {
   <br>
 
   <label for="password">Password:</label>
-  <input type="password" name="password" id="password">
+  <input type="password" name="password" id="password" required>
 
   <br>
 

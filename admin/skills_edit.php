@@ -68,7 +68,7 @@ if( isset( $_GET['id'] ) )
 <form method="post">
   
   <label for="name">Name:</label>
-  <input type="text" name="name" id="name" value="<?php echo htmlentities( $record['name'] ); ?>">
+  <input type="text" name="name" id="name" value="<?php echo htmlentities( $record['name'] ); ?>" required>
     
   <br>
   
